@@ -1,0 +1,142 @@
+doctype html
+html(lang="en")
+  include components/_head
+  body
+    include components/_menu
+    section.wrapper.product-page__padding-top
+      ul.back-routes
+        li
+          a.back-routes__route(href="#") В каталог ковриков
+      h2.main-title.product-page__padding Детский коврик Pure Soft «Ночь в Норильске«, 190x130x1.2 см
+      .product-page
+        .left-col
+          .carpet-card
+            .carpet-card__row
+              h2.carpet-card__title Размер коврика
+              .carpet-card__size
+                a.toggle-button.active(onclick="openTab(event, 'tab-big', 'tab-card')") Большой
+                a.toggle-button(onclick="openTab(event, 'tab-small', 'tab-card')") Маленький
+              .tab-card#tab-big(style="display:block")
+                .carpet-card__photo#cardPhoto(style="background-image: url(img/carpet-preview.jpg)")
+                  .carpet-card__photo-zoom#zoom
+                  .carpet-card__photo-width
+                    .carpet-card__photo-line-width
+                      .carpet-card__photo-arrow-width
+                    span.carpet-card__photo-size 190см
+                  .carpet-card__photo__height
+                    .carpet-card__photo-line-height
+                      .carpet-card__photo-arrow-height
+                    span.carpet-card__photo-size 130см  
+                button.carpet-card__change-side#changeSide Посмотреть обратную сторону
+                .carpet-card__desc
+                  .carpet-card__desc-row
+                    p.carpet-card__text.carpet-card__dots Рисунок
+                    p.carpet-card__text Снежные горы/Лес
+                  .carpet-card__desc-row
+                    p.carpet-card__text.carpet-card__dots Размер
+                    p.carpet-card__text 190x130x1,2 см
+                  .carpet-card__desc-row
+                    p.carpet-card__text.carpet-card__dots Вес
+                    p.carpet-card__text 6,0 кг
+                  .carpet-card__desc-row
+                    p.carpet-card__text.carpet-card__dots Артикул
+                    p.carpet-card__text PS-932-ETMG
+              .tab-card#tab-small kek
+                
+            .carpet-card__row
+              h2.carpet-card__price 5 900 р.
+              .carpet-card__last-price
+                h2.carpet-card__last-price-text 10 990 р.
+                h3.carpet-card__last-price-discount Экономия 46%
+              button.carpet-card__buy-button Купить коврик
+            .carpet-card__row
+              h2.carpet-card__notice Коврик в наличии!
+              .carpet-card__delivery
+                h3.carpet-card__delivery-title Доставка в Ваш город:
+                p.carpet-card__delivery-text.
+                  Самовывоз СДЭК: от 17 раб. дней, от 600 руб.  <br/> Службы доставки: от 5 раб. дней, от 1000 руб.
+                .carpet-card__delivery-photo
+          .carpets-slider#carpetsSlider
+            .carpets-slider__slide.first
+            .carpets-slider__slide.second
+            .carpets-slider__slide.third
+            .carpets-slider__slide.fourth
+            .carpets-slider__slide.fith
+          ul.thumbnails
+            li.carpets-slider__slide.first
+            li.carpets-slider__slide.second
+            li.carpets-slider__slide.third
+            li.carpets-slider__slide.fourth
+            li.carpets-slider__slide.fith
+          .product-page__description
+            h2.product-page__description-title#toggleTextTitle Описание
+            p.product-page__description-text.hide#toggleText.
+              Кто спрятался за елкой?! А кто живет в лесу? Этот коврик с изображением гор и леса готов стать помощником в ваших играх с ребенком. Лежа на нем можно разыграть лесную сказку или сочинять истории про зверей, а может быть, просто вспомнить названия обитателей чащи. Да и заняться своими делами — ползать, кувыркаться или спать, на таком коврике малышу будет всегда комфортно.</br>
+              Мягкий, приятный на ощупь, созданный из безопасного ПВХ, он легко моется, не промокает, не продавливается со временем и не меняет цвет.</br>
+              Несмотря на монохромность расцветки, этот коврик станет ярким дополнением интерьера комнаты.
+          h2.product-page__description-title Отзывы о коврике
+          .reviews.product-page
+            .reviews__item
+              .reviews__img
+              div
+                .reviews__desc-top
+                  .reviews__desc__img
+                  h2.reviews__title KatrinYamg
+                p.reviews__text.
+                  Это нереально классный коврик. Поставляется в рулоне, упакован в фирменную коробку. Большой, хорошая толщина, нет никакого запаха. Очень приятный на ощупь, мягкий, красочный, очень тёплый и не скользкий. Самый ещё большой, что очень легко за ним ухаживать: протер тряпочкой и все! Не впитывает жидкость! Этот коврик понравился не только самой маленькой, но и старшим детям. Буду ещё покупать 2 коврика, чтобы старшим детям положить в комнаты и убрать обычные ковры-пылесборники! Однозначно Рекомендую!
+            .reviews__item
+              .reviews__img
+              div
+                .reviews__desc-top
+                  .reviews__desc__img
+                  h2.reviews__title KatrinYamg
+                p.reviews__text.
+                  Это нереально классный коврик. Поставляется в рулоне, упакован в фирменную коробку. Большой, хорошая толщина, нет никакого запаха. Очень приятный на ощупь, мягкий, красочный, очень тёплый и не скользкий. Самый ещё большой, что очень легко за ним ухаживать: протер тряпочкой и все! Не впитывает жидкость! Этот коврик понравился не только самой маленькой, но и старшим детям. Буду ещё покупать 2 коврика, чтобы старшим детям положить в комнаты и убрать обычные ковры-пылесборники! Однозначно Рекомендую!
+          button.add-more-reviews Загрузить ещё отзывы
+    .product-page__line
+    section.wrapper
+      h2.main-title.mobile-hidden Смотрите также
+      .popular-carpets.product-page
+        .popular-carpets__card
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.first
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 6 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.first
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 6 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.first
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 6 990 р.
+            a.popular-carpets__about Подробнее
+    include components/_footer

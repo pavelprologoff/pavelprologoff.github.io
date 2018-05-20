@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+  include components/_head
+body
+    include components/_menu
+    section.wrapper.catalog-padding
+      h2.main-title Каталог детских ковриков Parklon
+      .catalog-description
+        .props 
+          span.description Параметры коврика
+          ul.dropdown
+            li Линейка: 
+              button.dropdown-item Все линейки
+            li Размер: 
+              button.dropdown-item Любой
+            li Толщина: 
+              button.dropdown-item(onclick="drop('drop-lines', 'drop-lines-menu')" onblur="hideDrop('drop-lines', 'drop-lines-menu')")#drop-lines Любая
+                div.dropdown-menu#drop-lines-menu
+                  a(href="#").active Любая
+                  a(href="#") Маленькая
+                  a(href="#") Средняя
+                  a(href="#") Большая
+        .sort 
+          .description Сортировка
+          .toggle
+            span.toggle-button.active(onclick="sortBy(event, 'low')") Сначала дешёвые
+            span.toggle-button(onclick="sortBy(event, 'high')") Сначала дорогие
+      .popular-carpets.margin#sort-list
+        .popular-carpets__card.no-hide
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.second
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 5 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card.no-hide
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.second
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 5 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card.no-hide
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.second
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 5 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card.no-hide
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.second
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 5 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card.no-hide
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.second
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 5 990 р.
+            a.popular-carpets__about Подробнее
+        .popular-carpets__card.no-hide
+          h2.popular-carpets__title Детский коврик Prime Living
+          h3.popular-carpets__sub-title Щеночки/Мишка на каникулах
+          .popular-carpets__img.first
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Размер
+            p.popular-carpets__sizes-text 200х180 см
+          .popular-carpets__sizes
+            p.popular-carpets__sizes-text.popular-carpets__dots Толщина
+            p.popular-carpets__sizes-text 1,5 см
+          .popular-carpets__desc
+            .popular-carpets__price
+              h2.popular-carpets__price-main 6 990 р.
+            a.popular-carpets__about Подробнее
+    include components/_footer

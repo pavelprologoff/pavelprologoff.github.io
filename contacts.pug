@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  include components/_head
+  body
+    include components/_menu
+    section.wrapper.product-page__padding-top.contacts
+      h2.main-title Контакты
+      .contacts__container#contactsPosition
+        h3.contacts__sub-title.selectCity Город <span class="current__city">Москва</span>
+          .triangle
+          .selectCity-modal
+            h2.selectCity-modal__title-new Введите название города <button class="closeNewCity"></button>
+            input.newCity-input
+            h2.selectCity-modal__title Ваш город <span>Москва</span>?
+            .selectCity-modal__buttons
+              button.selectCity-modal__accept Да
+              button.selectCityChange Выбрать другой
+        .contacts__address.padding0
+          h3.contacts__company ООО «Сиббэби»
+          h3.contacts__address-title г. Москва, м. Коломенская, Андропова пр-т, д. 8, ТРЦ «Мегаполис», 3 этаж
+          button.contacts__address-map-button#sabbiButton На карте
+          .contacts__address-map#mapPosition
+          .contacts__address-map#map
+            #cross-close
+          a(href="tel:88002500000").contacts__phone 8 (800) 250-00-00
+          .contacts__address-links
+            a.contacts__address-link(href="#") www.detmir.ru
+            a.contacts__address-vk(href="#")
+        .contacts__address
+          img.contacts__address-img(src="img/contacts1.jpg")
+          h3.contacts__company Сеть магазинов Детский мир
+          a(href="tel:88002500000").contacts__phone 8 (800) 250-00-00
+          .contacts__address-links
+            a.contacts__address-link(href="#") www.detmir.ru
+            a.contacts__address-vk(href="#")
+            a.contacts__address-fb(href="#")
+          a.contacts__address-mail(href="mailto:sales@detmir.ru") sales@detmir.ru
+        .contacts__address
+          img.contacts__address-img(src="img/contacts2.jpg")
+          h3.contacts__company Сеть магазинов Детский мир
+          h3.contacts__address-title г. Москва, м. Коломенская, Андропова пр-т, д. 8, ТРЦ «Мегаполис», 3 этаж
+          button.contacts__address-map-button-transparent#kiddieWorld Показать на карте
+          #map-mobile-2
+          a(href="tel:88002500000").contacts__phone 8 (800) 250-00-00
+          .contacts__address-links
+            a.contacts__address-inst(href="#")
+            a.contacts__address-vk(href="#")
+    include components/_footer

@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  include components/_head
+  body
+    include components/_menu
+    section.wrapper.product-page__padding-top
+      ul.back-routes
+        li
+          a.back-routes__route(href="#") В каталог ковриков
+      .checkout.checkout_recovery
+        h2.main-title.main-title_remove Оформление заказа
+        h3.checkout__remove-sub-title Вы удалили из заказа
+        h3.checkout__remove-sub-title Детский коврик Pure Soft «Ночь в Норильске«, 190x130x1.2 см
+        button.checkout__recovery-button Восстановить
+        .checkout__bascket
+          .checkout__basket-row
+            .checkout__item(style="background-image: url(img/checkout1.jpg)")
+            .checkout__item-desc
+              h2.checkout__item-name Детский коврик «Полярная сова», 190x130x1.2 см
+              div.checkout__item-price
+                h3.checkout__item-price-new 7 990 р.
+                h3.checkout__item-price-last.
+                  10 990 р. <span class="coupon-discount">– 10%</span>
+              div.checkout__item-count-line
+                .checkout__item-count
+                  button.remove-item(disabled)
+                  span.checkout__count 1
+                  button.add-item
+              .checkout__remove
+        .checkout__bascket-bottom-row
+          h2.checkout__bascket-coupon-appled.hide#couponAppled Ура! Скидочный купон активирован!
+          .checkout__bascket-coupon-row.hide#couponRow
+            input.checkout__bascket-coupon-input
+            button.checkout__bascket-coupon-apply#couponApply Применить
+            .checkout__bascket-coupon-cancel#hideCoupon
+          button.checkout__bascket-coupon#coupon Применить скидочный купон
+          h2.checkout__bascket-sum Сумма заказа 26 980 руб.
+    include components/_footer
